@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise Digital - Vidraçaria Amapá</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. NAVBAR -->
+    <nav style="position: fixed; top: 0; width: 100%; background: linear-gradient(135deg, #EFB828, #000000); padding: 1rem 4rem; z-index: 1000; box-shadow: 0 2px 15px rgba(0,0,0,0.1);">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-size: 1.5rem; font-weight: 800; color: white; display: flex; align-items: center;">
+                <div style="width: 40px; height: 40px; background-color: white; border-radius: 8px; margin-right: 10px; display: flex; align-items: center; justify-content: center; color: #EFB828; font-weight: 900;">VA</div>
+                Vidraçaria Amapá
+            </div>
+            <div style="display: flex; align-items: center; gap: 2rem;">
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="#diagnostico" style="color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Diagnóstico</a>
+                    <span style="color: rgba(255,255,255,0.7);">→</span>
+                    <a href="#mercado" style="color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Mercado</a>
+                    <span style="color: rgba(255,255,255,0.7);">→</span>
+                    <a href="#concorrentes" style="color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Concorrentes</a>
+                    <span style="color: rgba(255,255,255,0.7);">→</span>
+                    <a href="#estrategia" style="color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Estratégias</a>
+                </div>
+                <a href="https://wa.me/5516981005730?text=Fala%20William%20tudo%20joia%20?%20Via%20a%20sua%20an%C3%A1lise%20e%20gostaria%20de%20falar%20mais%20sobre%20o%20assunto." style="background-color: #25D366; color: white; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: 700; font-size: 0.9rem; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); transition: all 0.3s ease;">
+                    💬 Fale conosco
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO (70vh) -->
+    <header style="height: 70vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/1920x1080/?metal-windows,glass-facade,aluminum-structure'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding-top: 80px;">
+        <div style="max-width: 1000px; padding: 2rem;">
+            <p style="color: #EFB828; font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem;">
+                ⚠️ Visualização otimizada para Desktop
+            </p>
+            <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: rgba(255,255,255,0.9);">
+                Proposta exclusiva para Alessandro Gomes & Equipe • 27 de janeiro de 2025
+            </p>
+            <h1 style="font-size: 3.5rem; font-weight: 800; margin: 1rem 0; line-height: 1.2;">
+                Análise e Estratégia Digital
+            </h1>
+            <p style="font-size: 1.2rem; font-weight: 300; max-width: 700px; margin: 0 auto 2rem; color: rgba(255,255,255,0.95);">
+                "Você não vende portões de alumínio, vende a segurança de dormir tranquilo sabendo que a família está protegida"
+            </p>
+            <div style="display: inline-block; background: rgba(239, 184, 40, 0.2); border-left: 4px solid #EFB828; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: left;">
+                <p style="font-size: 0.9rem; margin: 0;">
+                    <strong>Macapá & Santana - AP</strong> • Mercado Médio e Alto Padrão • Cenário 2026
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. STATS CARDS (4 colunas com margin-top negativo) -->
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: -60px; margin-bottom: 3rem; padding: 0 4rem;">
+        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; border-top: 4px solid #EFB828;">
+            <span style="display: block; font-size: 3rem; font-weight: 800; color: #000000;">7.000+</span>
+            <span style="display: block; font-size: 0.8rem; color: #666; text-transform: uppercase; margin-top: 0.5rem;">Seguidores Instagram</span>
+        </div>
+        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; border-top: 4px solid #EFB828;">
+            <span style="display: block; font-size: 3rem; font-weight: 800; color: #000000;">190+</span>
+            <span style="display: block; font-size: 0.8rem; color: #666; text-transform: uppercase; margin-top: 0.5rem;">Posts Publicados</span>
+        </div>
+        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; border-top: 4px solid #EFB828;">
+            <span style="display: block; font-size: 3rem; font-weight: 800; color: #000000;">4.5⭐</span>
+            <span style="display: block; font-size: 0.8rem; color: #666; text-transform: uppercase; margin-top: 0.5rem;">Google Reviews (51)</span>
+        </div>
+        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; border-top: 4px solid #EFB828;">
+            <span style="display: block; font-size: 3rem; font-weight: 800; color: #000000;">R$ 15-300k</span>
+            <span style="display: block; font-size: 0.8rem; color: #666; text-transform: uppercase; margin-top: 0.5rem;">Ticket Médio Projeto</span>
+        </div>
+    </div>
+
+    <!-- 4. DIAGNÓSTICO DOS CANAIS DIGITAIS (3 cards lado a lado) -->
+    <section id="diagnostico" style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #000000;">Diagnóstico dos Canais Digitais</h2>
+        <p style="color: #666; max-width: 600px; margin-bottom: 2rem;">
+            Análise técnica baseada nos dados públicos extraídos em janeiro/2025. O objetivo é identificar gargalos que impedem a conversão de vendas previsíveis.
+        </p>
+        
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+            <!-- Card Instagram -->
+            <div style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #EFB828; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <span style="font-size: 2.5rem;">📱</span>
+                    <span style="background: #fff3cd; color: #856404; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.7rem; font-weight: 700;">ATENÇÃO</span>
+                </div>
+                <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">Instagram</h3>
+                <div style="margin-bottom: 1rem;">
+                    <span style="background: #d4edda; color: #155724; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;">7.000+ seguidores</span>
+                    <span style="background: #fff3cd; color: #856404; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;">190+ posts</span>
+                    <span style="background: #f8d7da; color: #721c24; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem;">Engajamento 0.58%</span>
+                </div>
+                <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                    <strong>Situação atual:</strong> Perfil com 7.700+ seguindo (mais do que seguidores), o que transmite amadorismo. Bio descritiva mas visualmente desorganizada. Conteúdo focado 70% em portfólio (Reels de obras concluídas), 20% vendas, 10% institucional. Frequência: 2-3 posts/semana. Faltam conteúdos educacionais e humanizados (bastidores, processos).
+                </p>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: #EFB828;">
+                    <strong>Oportunidade:</strong> Reduzir contas seguidas para <1.000. Reorganizar bio com quebras de linha. Implementar estratégia AIDA completa (falta topo de funil). Posts educacionais sobre escolha de vidros, manutenção. Aumentar engajamento para 3-7% (benchmark setor).
+                </p>
+            </div>
+            
+            <!-- Card GMB -->
+            <div style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #EFB828; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <span style="font-size: 2.5rem;">📍</span>
+                    <span style="background: #f8d7da; color: #721c24; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.7rem; font-weight: 700;">CRÍTICO</span>
+                </div>
+                <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">Google Meu Negócio</h3>
+                <div style="margin-bottom: 1rem;">
+                    <span style="background: #d4edda; color: #155724; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;">51 avaliações</span>
+                    <span style="background: #d4edda; color: #155724; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;">4.5⭐</span>
+                    <span style="background: #f8d7da; color: #721c24; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem;">Nenhuma postagem</span>
+                </div>
+                <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                    <strong>Situação atual:</strong> Perfil moderadamente completo (endereço, telefone, serviços). Apenas 17 fotos e 1 vídeo. Intervalo entre avaliações: 3-4 meses. Respostas genéricas ("obrigado") sem SEO. Apenas 1 produto cadastrado (banner). Nenhuma postagem no feed do GMB. Horários não especificados publicamente.
+                </p>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: #EFB828;">
+                    <strong>Oportunidade:</strong> Adicionar 20+ fotos recentes. Criar posts semanais no GMB. Cadastrar produtos específicos (portões, boxes, janelas) com SEO. Responder avaliações com keywords locais. Completar atributos (horários exatos, pagamentos). Projeção: +30-50% views em 3 meses.
+                </p>
+            </div>
+            
+            <!-- Card Site -->
+            <div style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #EFB828; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <span style="font-size: 2.5rem;">🌐</span>
+                    <span style="background: #f8d7da; color: #721c24; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.7rem; font-weight: 700;">CRÍTICO</span>
+                </div>
+                <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">Site/Online Presence</h3>
+                <div style="margin-bottom: 1rem;">
+                    <span style="background: #f8d7da; color: #721c24; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;">Sem site dedicado</span>
+                    <span style="background: #f8d7da; color: #721c24; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem;">SEO local fraco</span>
+                </div>
+                <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                    <strong>Situação atual:</strong> Nenhum site institucional. Listagem em "serralheriapertodemim.online" apenas. WhatsApp como canal principal. Presença em Facebook (atividade moderada) e Instagram. Sem perfil no X/Twitter. Volume de buscas locais: baixo a médio (centenas/mês) para keywords como "vidraçaria Amapá".
+                </p>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: #EFB828;">
+                    <strong>Oportunidade:</strong> Site institucional simples otimizado para SEO local. Domínio próprio. Páginas para cada serviço (portões, boxes, janelas). Blog com conteúdo educativo. Integração com GMB e redes sociais. Projeção: +40% leads com buscas orgânicas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. BOX CENÁRIO ATUAL → CENÁRIO COM ESTRATÉGIA -->
+    <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; padding: 0 4rem; margin: 3rem 0; align-items: center;">
+        <div style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #000000; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+            <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">❌ Cenário Atual</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+                    <span style="color: #e74c3c; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✗</span>
+                    <span>Dependência de indicação (ciclo longo, imprevisível)</span>
+                </li>
+                <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+                    <span style="color: #e74c3c; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✗</span>
+                    <span>Instagram mostra produto, não solução (foco no fundo do funil)</span>
+                </li>
+                <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+                    <span style="color: #e74c3c; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✗</span>
+                    <span>GMB subutilizado (sem posts, poucas fotos, respostas genéricas)</span>
+                </li>
+                <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+                    <span style="color: #e74c3c; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✗</span>
+                    <span>Sem site próprio (perde credibilidade e buscas orgânicas)</span>
+                </li>
+                <li style="display: flex; align-items: start;">
+                    <span style="color: #e74c3c; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✗</span>
+                    <span>Falta de fluxo contínuo de orçamentos qualificados</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div style="font-size: 3rem; color: #EFB828; font-weight: 700; padding: 1rem;">→</div>
+        
+        <div style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #EFB828; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+            <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #EFB828;">✓ Cenário com Estratégia</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+                    <span style="color: #27ae60; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✓</span>
+                    <span>Demanda ativa via anúncios (Google + Meta) filtrada para médio/alto padrão</span>
+                </li>
+                <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+                    <span style="color: #27ae60; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✓</span>
+                    <span>Instagram com funil AIDA completo (educa → converte)</span>
+                </li>
+                <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+                    <span style="color: #27ae60; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✓</span>
+                    <span>GMB otimizado (posts semanais, +fotos, respostas com SEO)</span>
+                </li>
+                <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+                    <span style="color: #27ae60; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✓</span>
+                    <span>Site institucional com SEO local (autoridade + credibilidade)</span>
+                </li>
+                <li style="display: flex; align-items: start;">
+                    <span style="color: #27ae60; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✓</span>
+                    <span>5-15 orçamentos qualificados/mês (previsíveis)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 6. POR QUE ESTA ANÁLISE FOI FEITA ASSIM? -->
+    <section style="padding: 1.5rem 4rem; margin-bottom: 3rem; background: #f9fafb; border-radius: 16px;">
+        <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem; color: #000000;">Por Que Esta Análise Foi Feita Assim?</h2>
+        <p style="color: #666; margin-bottom: 2rem;">Observei 3 coisas sobre a Vidraçaria Amapá:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-top: 4px solid #000000;">
+                <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">1. Vocês já têm uma base sólida</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                    7.000+ seguidores no Instagram, 51 avaliações no Google (4.5⭐), 190+ posts publicados, selo "Destaque de Ouro 2025". Presença estabelecida em Macapá/Santana.
+                </p>
+                <p style="font-size: 0.95rem; font-weight: 600; line-height: 1.6; color: #000000;">
+                    O problema não é "começar do zero", mas sim organizar e profissionalizar o que já existe para converter reputação em leads previsíveis.
+                </p>
+            </div>
+            
+            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-top: 4px solid #000000;">
+                <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">2. Seu público é qualificado</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                    ICP: Carlos Henrique, 32-48 anos, dono de pequena vidraçaria/serralheria. Ticket médio R$15.000-R$300.000+. Sensível a risco (não preço). Valoriza confiança, prazo, acabamento, autoridade percebida.
+                </p>
+                <p style="font-size: 0.95rem; font-weight: 600; line-height: 1.6; color: #000000;">
+                    Não precisa de volume gigante de leads, precisa de leads certos: clientes de médio/alto padrão que valorizam qualidade sobre preço.
+                </p>
+            </div>
+            
+            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-top: 4px solid #000000;">
+                <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">3. Concorrência está dormindo</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                    Vidraçaria Cristal Vidros: poucas reviews, otimização baixa. Vidraçaria Melo: 1 avaliação, baixa atividade. Amapá Temper: foco em fabricação, menos em serviços locais. Nenhum combina reputação + presença digital profissional.
+                </p>
+                <p style="font-size: 0.95rem; font-weight: 600; line-height: 1.6; color: #000000;">
+                    Enquanto eles competem por preço e dependem de indicação, vocês podem se posicionar como referência técnica premium com captação previsível.
+                </p>
+            </div>
+        </div>
+        
+        <div style="background: linear-gradient(135deg, #000000, #333333); color: white; padding: 2rem; border-radius: 12px; margin-top: 2rem; border-left: 4px solid #EFB828;">
+            <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #EFB828;">💡 Por isso a estratégia foca em:</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+                    <span style="color: #EFB828; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✓</span>
+                    <span><strong>Reativar</strong> (não começar do zero): GMB + Instagram já têm audiência e reputação</span>
+                </li>
+                <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
+                    <span style="color: #EFB828; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✓</span>
+                    <span><strong>Qualificar</strong> (não quantidade): Atrair quem paga R$15.000-R$300.000+ por projeto</span>
+                </li>
+                <li style="display: flex; align-items: start;">
+                    <span style="color: #EFB828; margin-right: 0.5rem; font-weight: 700; font-size: 1.2rem;">✓</span>
+                    <span><strong>Profissionalizar</strong> (não improvisar): Funil estruturado AIDA, não apenas "postagens"</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 7. PESQUISA DE MERCADO -->
+    <section id="mercado" style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
+        <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; align-items: start;">
+            <!-- Coluna 1: Contexto do Mercado -->
+            <div>
+                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #000000;">Pesquisa de Mercado</h2>
+                <p style="font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 1.5rem;">
+                    Macapá & Santana - AP, região em expansão econômica. Projeto Ferro Amapá (US$ 200 milhões) e perfurações da Petrobras impulsionam construção civil. Projeção: crescimento do PIB estadual em até 61.2% no primeiro ano de exploração, gerando ~490 mil empregos.
+                </p>
+                <p style="font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 2rem;">
+                    A Vidraçaria Amapá tem posição sólida localmente (selo "Destaque de Ouro 2025"), mas gap entre qualidade do serviço e presença digital profissionalizada. Mercado fragmentado e informal, com concorrência competindo mal.
+                </p>
+                
+                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">Tendências Identificadas</h3>
+                <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                        <span style="margin-right: 0.8rem; font-size: 1.3rem; color: #EFB828;">📈</span>
+                        <span style="line-height: 1.6;">2026: Eleições, Copa do Mundo, feriados → consumidor mais cauteloso, ciclo de decisão mais longo</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                        <span style="margin-right: 0.8rem; font-size: 1.3rem; color: #EFB828;">🔆</span>
+                        <span style="line-height: 1.6;">Cliente médio/alto padrão é sensível a risco, não preço. Valoriza confiança, prazo, acabamento, autoridade</span>
+                    </li>
+                    <li style="display: flex; align-items: start;">
+                        <span style="margin-right: 0.8rem; font-size: 1.3rem; color: #EFB828;">⚙️</span>
+                        <span style="line-height: 1.6;">Empresas que controlam demanda (não esperam indicação) atravessam melhor anos instáveis</span>
+                    </li>
+                </ul>
+                
+                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">Dimensão de Mercado</h3>
+                <p style="font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 0.8rem;">
+                    <strong>Setor Vidraçaria/Serralheria:</strong> Mercado local em crescimento com investimentos em infraestrutura.
+                </p>
+                <p style="font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 0.8rem;">
+                    <strong>Nicho Médio/Alto Padrão:</strong> Ticket R$15.000-R$300.000+. Margens: 20-35% (estruturadas), acima de 40% (premium bem posicionado).
+                </p>
+                <p style="font-size: 1rem; line-height: 1.6; color: #666; font-weight: 600;">
+                    <strong>Insight:</strong> Enquanto concorrentes disputam por preço baixo e dependem de indicação, há espaço para posicionamento premium com captação previsível via digital.
+                </p>
+            </div>
+            
+            <!-- Coluna 2: Box ICP -->
+            <div style="background: linear-gradient(135deg, #000000, #333333); color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; color: #EFB828; text-transform: uppercase; letter-spacing: 0.1rem; font-size: 0.9rem;">Perfil do Cliente Ideal (ICP)</h3>
+                
+                <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.2);">
+                    <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                        <span style="margin-right: 0.5rem; font-size: 1.2rem; color: #EFB828;">👤</span>
+                        <strong style="font-size: 1rem;">Perfil</strong>
+                    </div>
+                    <p style="font-size: 0.95rem; line-height: 1.5; opacity: 0.95;">
+                        Homem, 32-48 anos, vidraceiro/serraleiro autônomo ou dono de pequena empresa. Ensino médio completo/incompleto. Aprendeu o ofício na prática. Mora em periferia ou região metropolitana.
+                    </p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.2);">
+                    <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                        <span style="margin-right: 0.5rem; font-size: 1.2rem; color: #EFB828;">💰</span>
+                        <strong style="font-size: 1rem;">Ticket Médio</strong>
+                    </div>
+                    <p style="font-size: 0.95rem; line-height: 1.5; opacity: 0.95;">
+                        R$ 15.000 - R$ 300.000+ por projeto
+                    </p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.2);">
+                    <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                        <span style="margin-right: 0.5rem; font-size: 1.2rem; color: #EFB828;">🎯</span>
+                        <strong style="font-size: 1rem;">Dor Principal</strong>
+                    </div>
+                    <p style="font-size: 0.95rem; line-height: 1.5; opacity: 0.95;">
+                        Falta de fluxo constante de clientes. Dependência de indicação. Altos e baixos no faturamento. Dificuldade em cobrar preço justo. Concorrência por preço baixo.
+                    </p>
+                </div>
+                
+                <div>
+                    <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                        <span style="margin-right: 0.5rem; font-size: 1.2rem; color: #EFB828;">🛒</span>
+                        <strong style="font-size: 1rem;">Decisão de Compra</strong>
+                    </div>
+                    <p style="font-size: 0.95rem; line-height: 1.5; opacity: 0.95;">
+                        Pesquisa online (Google/Instagram). Compara 2-4 orçamentos. Avalia prazo, atendimento, segurança. Ciclo mais longo em 2026. Fecha com quem transmite mais confiança (não menor preço).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. ANÁLISE DE CONCORRENTES -->
+    <section id="concorrentes" style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #000000;">Benchmark Competitivo</h2>
+        <p style="color: #666; margin-bottom: 2rem;">Comparativo direto de presença digital na região Macapá/Santana - AP.</p>
+        
+        <div style="overflow-x: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+            <table style="width: 100%; border-collapse: collapse; background: white; min-width: 1000px;">
+                <thead style="background: linear-gradient(135deg, #000000, #333333); color: white;">
+                    <tr>
+                        <th style="padding: 1rem; text-align: left; font-weight: 700;">Nome</th>
+                        <th style="padding: 1rem; text-align: left; font-weight: 700;">Tempo Mercado</th>
+                        <th style="padding: 1rem; text-align: left; font-weight: 700;">Reviews (Google)</th>
+                        <th style="padding: 1rem; text-align: left; font-weight: 700;">Instagram</th>
+                        <th style="padding: 1rem; text-align: left; font-weight: 700;">Site</th>
+                        <th style="padding: 1rem; text-align: left; font-weight: 700;">Google Ads</th>
+                        <th style="padding: 1rem; text-align: left; font-weight: 700;">Observação Estratégica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Concorrente 1 -->
+                    <tr style="border-bottom: 1px solid #f0f0f0;">
+                        <td style="padding: 1rem; font-weight: 600;">Vidraçaria Cristal Vidros</td>
+                        <td style="padding: 1rem;">Estabelecida</td>
+                        <td style="padding: 1rem;">Poucas (nota ~4.0)</td>
+                        <td style="padding: 1rem;"><span style="color: #e74c3c; font-weight: 600;">BAIXO</span></td>
+                        <td style="padding: 1rem;">❌ Não</td>
+                        <td style="padding: 1rem;">❌ Não</td>
+                        <td style="padding: 1rem; font-size: 0.9rem; color: #666;">Foco em suprimentos básicos. Otimização baixa. Pouca presença digital. Deixa espaço para quem se posiciona como especialista em serviços completos.</td>
+                    </tr>
+                    
+                    <!-- Concorrente 2 -->
+                    <tr style="border-bottom: 1px solid #f0f0f0;">
+                        <td style="padding: 1rem; font-weight: 600;">Vidraçaria Melo</td>
+                        <td style="padding: 1rem;">Estabelecida</td>
+                        <td style="padding: 1rem;">1 avaliação (~4⭐)</td>
+                        <td style="padding: 1rem;"><span style="color: #e74c3c; font-weight: 600;">BAIXO</span></td>
+                        <td style="padding: 1rem;">❌ Não</td>
+                        <td style="padding: 1rem;">❌ Não</td>
+                        <td style="padding: 1rem; font-size: 0.9rem; color: #666;">Atividade digital quase inexistente. Completa horários comerciais mas sem conteúdo. Oportunidade: captar sua clientela com presença digital ativa.</td>
+                    </tr>
+                    
+                    <!-- Concorrente 3 -->
+                    <tr style="border-bottom: 1px solid #f0f0f0;">
+                        <td style="padding: 1rem; font-weight: 600;">Amapá Temper</td>
+                        <td style="padding: 1rem;">Estabelecida</td>
+                        <td style="padding: 1rem;">Moderadas</td>
+                        <td style="padding: 1rem;"><span style="color: #f39c12; font-weight: 600;">MODERADO</span></td>
+                        <td style="padding: 1rem;">✅ Sim</td>
+                        <td style="padding: 1rem;">❌ Não</td>
+                        <td style="padding: 1rem; font-size: 0.9rem; color: #666;">Indústria de vidros temperados. Foco em fabricação, menos em serviços locais de instalação. Mais competitiva em volume, menos em atendimento personalizado.</td>
+                    </tr>
+                    
+                    <!-- CLIENTE (linha destacada) -->
+                    <tr style="background: #FFF9E6; border-left: 4px solid #EFB828;">
+                        <td style="padding: 1rem; font-weight: 700; color: #000000;">Vidraçaria Amapá (VOCÊ)</td>
+                        <td style="padding: 1rem; font-weight: 600;">Estabelecida</td>
+                        <td style="padding: 1rem; font-weight: 600;">51 (4.5⭐)</td>
+                        <td style="padding: 1rem; font-weight: 600;"><span style="color: #f39c12; font-weight: 700;">MODERADO</span></td>
+                        <td style="padding: 1rem; font-weight: 600;">❌ Não</td>
+                        <td style="padding: 1rem; font-weight: 600;">❌ Não</td>
+                        <td style="padding: 1rem; font-size: 0.9rem; font-weight: 600; color: #333;">Posição competitiva sólida (reputação, selo "Destaque de Ouro"), mas presença digital desorganizada. Potencial para liderar com profissionalização digital.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div style="background: linear-gradient(135deg, rgba(239, 184, 40, 0.15), rgba(239, 184, 40, 0.05)); border-left: 4px solid #EFB828; padding: 2rem; border-radius: 12px; margin-top: 2rem;">
+            <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.8rem; color: #000000;">🎯 Insight Competitivo</h3>
+            <p style="font-size: 1rem; line-height: 1.6; color: #333;">
+                Nenhum concorrente local combina reputação sólida (51 avaliações 4.5⭐) + presença social ativa (7.000+ seguidores) + prêmio de autoridade ("Destaque de Ouro 2025") + estratégia digital profissionalizada. A Vidraçaria Amapá tem tudo para liderar o mercado local de médio/alto padrão com organização digital e foco em captação previsível, enquanto concorrentes dependem de indicação e competem por preço.
+            </p>
+        </div>
+    </section>
+
+    <!-- 9. CUSTO SILENCIOSO DE NÃO AGIR -->
+    <section style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #000000;">O Custo Silencioso de Não Agir</h2>
+        <p style="font-size: 1rem; line-height: 1.6; color: #666; max-width: 800px; margin-bottom: 2rem;">
+            Não vou dizer "você precisa decidir hoje". Isso seria desrespeitar seu processo. Mas vale entender o que está acontecendo agora, enquanto não há estratégia digital ativa.
+        </p>
+        
+        <div style="background: linear-gradient(135deg, #000000, #333333); border: 3px solid #e74c3c; padding: 2.5rem; border-radius: 12px; color: white; display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: center;">
+            <div>
+                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; color: #EFB828;">⏰ CUSTO DA INAÇÃO</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                        <span style="color: #e74c3c; font-size: 1.5rem; margin-right: 0.8rem;">📉</span>
+                        <span style="line-height: 1.6;">5-10 leads qualificados/mês não capturados (média mercado B2B serviços locais)</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                        <span style="color: #e74c3c; font-size: 1.5rem; margin-right: 0.8rem;">💰</span>
+                        <span style="line-height: 1.6;">Valor médio perdido: R$ 50.000 (ticket médio conservador) × 0,2 (conversão) × 5 (leads) = R$ 50.000/mês</span>
+                    </li>
+                    <li style="display: flex; align-items: start;">
+                        <span style="color: #e74c3c; font-size: 1.5rem; margin-right: 0.8rem;">📊</span>
+                        <span style="line-height: 1.6;">Em 6 meses: R$ 300.000 em oportunidades perdidas</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div style="font-size: 3rem; color: #e74c3c; font-weight: 700;">→</div>
+            
+            <div style="border-left: 3px solid #e74c3c; padding-left: 2rem;">
+                <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1rem;">
+                    A pergunta não é: <em>"Preciso decidir agora?"</em>
+                </p>
+                <p style="font-size: 1.2rem; line-height: 1.6; font-weight: 700; color: #EFB828;">
+                    E sim: <strong>"Quanto tempo mais vou deixar essas oportunidades na mesa?"</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. MÉTODO AIDA -->
+    <section style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
+        <div style="background: linear-gradient(135deg, #000000, #333333); padding: 2.5rem; border-radius: 16px;">
+            <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: white;">Método AIDA (Estratégia Instagram)</h2>
+            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255,255,255,0.9); max-width: 900px; margin-bottom: 2rem;">
+                Atualmente, o Instagram da Vidraçaria Amapá foca apenas em <strong>AÇÃO (portfólio pronto)</strong>. Para aumentar alcance e engajamento, o funil completo precisa ser implementado:
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                <!-- Card A -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(239, 184, 40, 0.3); padding: 2rem; text-align: center; border-radius: 12px;">
+                    <div style="font-size: 4rem; font-weight: 800; color: #EFB828; text-shadow: 0 2px 10px rgba(0,0,0,0.3); margin-bottom: 1rem;">A</div>
+                    <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: white;">Atenção</h3>
+                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.9); margin-bottom: 0.8rem;">
+                        <strong>Objetivo:</strong> Aumentar alcance e atrair novos seguidores
+                    </p>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: rgba(255,255,255,0.85);">
+                        <strong>Como:</strong> Reels "Antes/Depois" impactantes. Vídeos curtos de "3 sinais que seu box precisa de manutenção". Áudios em alta + geotags de bairros nobres de Macapá.
+                    </p>
+                </div>
+                
+                <!-- Card I -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(239, 184, 40, 0.3); padding: 2rem; text-align: center; border-radius: 12px;">
+                    <div style="font-size: 4rem; font-weight: 800; color: #EFB828; text-shadow: 0 2px 10px rgba(0,0,0,0.3); margin-bottom: 1rem;">I</div>
+                    <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: white;">Interesse</h3>
+                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.9); margin-bottom: 0.8rem;">
+                        <strong>Objetivo:</strong> Educar e posicionar como autoridade técnica
+                    </p>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: rgba(255,255,255,0.85);">
+                        <strong>Como:</strong> Carrosséis: "Vidro Comum vs. Temperado: Qual escolher?". "Vantagens da Linha Suprema em esquadrias". Posts técnicos sobre durabilidade e segurança.
+                    </p>
+                </div>
+                
+                <!-- Card D -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(239, 184, 40, 0.3); padding: 2rem; text-align: center; border-radius: 12px;">
+                    <div style="font-size: 4rem; font-weight: 800; color: #EFB828; text-shadow: 0 2px 10px rgba(0,0,0,0.3); margin-bottom: 1rem;">D</div>
+                    <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: white;">Desejo</h3>
+                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.9); margin-bottom: 0.8rem;">
+                        <strong>Objetivo:</strong> Criar conexão emocional e luxo
+                    </p>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: rgba(255,255,255,0.85);">
+                        <strong>Como:</strong> Reels de detalhes (close-ups em acabamentos). Espelhos com LED em ambientes decorados. Depoimentos de clientes em vídeo. Iluminação quente nos vídeos.
+                    </p>
+                </div>
+                
+                <!-- Card A -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(239, 184, 40, 0.3); padding: 2rem; text-align: center; border-radius: 12px;">
+                    <div style="font-size: 4rem; font-weight: 800; color: #EFB828; text-shadow: 0 2px 10px rgba(0,0,0,0.3); margin-bottom: 1rem;">A</div>
+                    <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: white;">Ação</h3>
+                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.9); margin-bottom: 0.8rem;">
+                        <strong>Objetivo:</strong> Facilitar conversão imediata
+                    </p>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: rgba(255,255,255,0.85);">
+                        <strong>Como:</strong> Stories com enquetes: "Qual portão combina mais com sua casa?". CTAs claros: "Clique aqui para orçamento". Senso de urgência: "Agenda de Fevereiro aberta".
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. IDEIAS DE ANÚNCIOS -->
+    <section style="padding: 1.5rem 4rem; margin-bottom: 3rem; background: #f9fafb; border-radius: 16px;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #000000;">Ideias de Anúncios (Google + Meta)</h2>
+        <p style="color: #666; margin-bottom: 2rem;">Palavras-chave e criativos estratégicos para vidraçaria/serralheria em Macapá/Santana:</p>
+        
+        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">🎯 Palavras-chave Estratégicas (Google Ads)</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 2rem;">
+            <span style="background: white; padding: 0.5rem 1rem; border-radius: 20px; border: 2px solid #EFB828; font-weight: 600; font-size: 0.9rem;">vidraçaria em santana ap</span>
+            <span style="background: white; padding: 0.5rem 1rem; border-radius: 20px; border: 2px solid #EFB828; font-weight: 600; font-size: 0.9rem;">vidraceiro em santana ap</span>
+            <span style="background: white; padding: 0.5rem 1rem; border-radius: 20px; border: 2px solid #EFB828; font-weight: 600; font-size: 0.9rem;">vidraçaria perto de mim</span>
+            <span style="background: white; padding: 0.5rem 1rem; border-radius: 20px; border: 2px solid #EFB828; font-weight: 600; font-size: 0.9rem;">orçamento vidraçaria santana</span>
+            <span style="background: white; padding: 0.5rem 1rem; border-radius: 20px; border: 2px solid #EFB828; font-weight: 600; font-size: 0.9rem;">fechamento de varanda com vidro</span>
+            <span style="background: white; padding: 0.5rem 1rem; border-radius: 20px; border: 2px solid #EFB828; font-weight: 600; font-size: 0.9rem;">orçamento serralheria de alumínio</span>
+            <span style="background: white; padding: 0.5rem 1rem; border-radius: 20px; border: 2px solid #EFB828; font-weight: 600; font-size: 0.9rem;">preço de box para banheiro</span>
+        </div>
+        
+        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">📝 Títulos de Anúncio (máx. 30 caracteres)</h3>
+        <ul style="list-style: none; padding: 0; margin-bottom: 2rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #EFB828; font-weight: 700;">✓</span>
+                Vidraçaria em Santana AP
+            </li>
+            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #EFB828; font-weight: 700;">✓</span>
+                Box de Vidro Sob Medida
+            </li>
+            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #EFB828; font-weight: 700;">✓</span>
+                Orçamento Rápido WhatsApp
+            </li>
+            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #EFB828; font-weight: 700;">✓</span>
+                Vidraçaria Amapá Santana
+            </li>
+            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #EFB828; font-weight: 700;">✓</span>
+                Peça Orçamento Agora
+            </li>
+            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #EFB828; font-weight: 700;">✓</span>
+                Vidraçaria Perto de Mim
+            </li>
+        </ul>
+        
+        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">📋 Descrições de Anúncio (máx. 90 caracteres)</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; font-size: 0.95rem;">
+                <span style="position: absolute; left: 0; color: #EFB828; font-weight: 700;">✓</span>
+                "Vidraçaria em Santana AP com box, janelas e alumínio sob medida. Chame no WhatsApp."
+            </li>
+            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; font-size: 0.95rem;">
+                <span style="position: absolute; left: 0; color: #EFB828; font-weight: 700;">✓</span>
+                "Fechamento de varanda com vidro seguro e elegante. Peça orçamento no WhatsApp."
+            </li>
+            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; font-size: 0.95rem;">
+                <span style="position: absolute; left: 0; color: #EFB828; font-weight: 700;">✓</span>
+                "Serralheria de alumínio sob medida para sua casa. Atendimento rápido em Santana."
+            </li>
+            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; font-size: 0.95rem;">
+                <span style="position: absolute; left: 0; color: #EFB828; font-weight: 700;">✓</span>
+                "Vidraçaria perto de você com atendimento direto no WhatsApp. Clique e fale agora."
+            </li>
+        </ul>
+        
+        <div style="background: rgba(239, 184, 40, 0.1); border-left: 4px solid #EFB828; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+            <p style="font-size: 0.9rem; color: #333; margin: 0;">
+                <strong>Meta Ads (Facebook/Instagram):</strong> Segmentação por interesse (construção civil, reforma), localização (Macapá/Santana), renda (médio/alto padrão). Criativos visuais (Reels, Carrosséis) com CTAs diretos para WhatsApp.
+            </p>
+        </div>
+    </section>
+
+    <!-- 12. PLANO ESTRATÉGICO -->
+    <section id="estrategia" style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 2rem; text-align: center; color: #000000;">Plano de Ação 90 Dias</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <!-- Fase 1 -->
+            <div style="background: white; border-top: 4px solid #000000; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.3rem; font-weight: 700;">Fase 1: Fundamentos</h3>
+                    <span style="background: #f0f0f0; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">0-30 Dias</span>
+                </div>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                        <span style="color: #EFB828; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="line-height: 1.6;">Limpeza do Instagram (reduzir seguindo para <1.000, reorganizar bio, destaques)</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                        <span style="color: #EFB828; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="line-height: 1.6;">Otimização do Google Meu Negócio (+20 fotos, posts semanais, produtos cadastrados)</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                        <span style="color: #EFB828; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="line-height: 1.6;">Site institucional simples (WordPress, SEO local, páginas de serviço)</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                        <span style="color: #EFB828; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="line-height: 1.6;">Implementação estratégia AIDA no Instagram (conteúdo educativo + portfólio)</span>
+                    </li>
+                    <li style="display: flex; align-items: start;">
+                        <span style="color: #EFB828; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="line-height: 1.6;">Sistema de captura de leads (WhatsApp Business, formulário site)</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Fase 2 -->
+            <div style="background: white; border-top: 4px solid #EFB828; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.3rem; font-weight: 700;">Fase 2: Aceleração</h3>
+                    <span style="background: rgba(239, 184, 40, 0.15); color: #000000; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">30-90 Dias</span>
+                </div>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                        <span style="color: #EFB828; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="line-height: 1.6;">Campanhas Google Ads (palavras-chave estratégicas, foco em WhatsApp)</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                        <span style="color: #EFB828; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="line-height: 1.6;">Campanhas Meta Ads (segmentação por interesse, remarketing)</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                        <span style="color: #EFB828; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="line-height: 1.6;">Sistema de avaliações Google (incentivo pós-serviço, respostas com SEO)</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: start;">
+                        <span style="color: #EFB828; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="line-height: 1.6;">Conteúdo em vídeo (Reels educativos, depoimentos, bastidores)</span>
+                    </li>
+                    <li style="display: flex; align-items: start;">
+                        <span style="color: #EFB828; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="line-height: 1.6;">Otimização contínua (A/B test criativos, ajuste keywords, análise métricas)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. CLAREZA DE VALOR -->
+    <section id="roi" style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 2rem; text-align: center; color: #000000;">Clareza de Valor</h2>
+        
+        <!-- AVISO OBRIGATÓRIO -->
+        <div style="background: #fff3cd; border-left: 4px solid #f39c12; padding: 1.5rem; border-radius: 12px; margin-bottom: 3rem;">
+            <p style="font-size: 0.95rem; color: #856404; margin: 0;">
+                ⚠️ <strong>AVISO IMPORTANTE:</strong> Os números abaixo são <strong>BENCHMARKS de mercado</strong> baseados em dados de 2024-2025 do setor de construção civil/serviços locais. NÃO são promessas. Resultados dependem de execução, consistência e contexto local. Transparência total.
+            </p>
+        </div>
+        
+        <!-- 3 Cards Horizontais -->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
+            <!-- Card Instagram -->
+            <div style="background: white; padding: 1.8rem; border-radius: 12px; border-top: 4px solid #EFB828; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem;">Instagram Profissional</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Crescimento:</strong> 15-25%/mês</p>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Engajamento:</strong> 3-7% (vs 0.58% atual)</p>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong>Leads/mês:</strong> 5-10 qualificados</p>
+                <p style="font-size: 0.75rem; color: #888; font-style: italic;">*Fonte: Benchmarks B2B serviços locais</p>
+            </div>
+            
+            <!-- Card GMB -->
+            <div style="background: white; padding: 1.8rem; border-radius: 12px; border-top: 4px solid #EFB828; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem;">Google Meu Negócio</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Visualizações:</strong> 500-1.200/mês</p>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Cliques:</strong> 100-300</p>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong>Ligações:</strong> 20-50</p>
+                <p style="font-size: 0.75rem; color: #888; font-style: italic;">*Fonte: Negócios locais otimizados 2024</p>
+            </div>
+            
+            <!-- Card Anúncios (DESTAQUE) -->
+            <div style="background: linear-gradient(135deg, rgba(239, 184, 40, 0.1), rgba(239, 184, 40, 0.05)); padding: 1.8rem; border-radius: 12px; border: 3px solid #EFB828; box-shadow: 0 8px 25px rgba(239, 184, 40, 0.2);">
+                <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">📢 Anúncios Pagos</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Investimento:</strong> R$ 1.500-2.500/mês</p>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Leads:</strong> 15-25/mês (Google + Meta)</p>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>CAC:</strong> R$ 100-150</p>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong>Conversão:</strong> 20-30% (orçamento → fechamento)</p>
+                <p style="font-size: 0.75rem; color: #666; font-style: italic;">*Fonte: Campanhas B2B serviços premium</p>
+            </div>
+        </div>
+        
+        <!-- ROI DETALHADO (lado a lado) -->
+        <div style="background: linear-gradient(135deg, rgba(239, 184, 40, 0.15), rgba(239, 184, 40, 0.05)); padding: 2.5rem; border-radius: 16px; margin-bottom: 3rem;">
+            <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: #000000;">🎯 Projeção de ROI</h3>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+                <!-- Conservador -->
+                <div style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #3498db;">
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #3498db;">📉 Cenário CONSERVADOR</h4>
+                    <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Investimento: R$ 2.000/mês</p>
+                    <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Leads: 15-20 qualificados/mês</p>
+                    <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Conversão: 20% = 3-4 projetos/mês</p>
+                    <p style="font-size: 0.95rem; margin-bottom: 1rem; padding-top: 1rem; border-top: 2px solid #f0f0f0;">
+                        → 3 projetos × R$ 30.000 (ticket conservador) = R$ 90.000 receita
+                    </p>
+                    <p style="font-size: 1.1rem; font-weight: 700; color: #3498db;"><strong>ROI: 45x (investimento vs receita)</strong></p>
+                    <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">Margem: 25% = R$ 22.500 lucro</p>
+                </div>
+                
+                <!-- Otimista -->
+                <div style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #EFB828;">
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #000000;">📈 Cenário OTIMISTA (60-90 dias)</h4>
+                    <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">CAC reduzido: -30% (otimização)</p>
+                    <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Conversão: 30% otimizada</p>
+                    <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Ticket: R$ 50.000 (projetos maiores)</p>
+                    <p style="font-size: 0.95rem; margin-bottom: 1rem; padding-top: 1rem; border-top: 2px solid #f0f0f0;">
+                        → 6 projetos × R$ 50.000 = R$ 300.000 receita
+                    </p>
+                    <p style="font-size: 1.1rem; font-weight: 700; color: #000000;"><strong>ROI: 150x</strong></p>
+                    <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">Margem: 30% = R$ 90.000 lucro</p>
+                </div>
+            </div>
+            
+            <p style="font-size: 0.8rem; color: #666; text-align: center; font-style: italic;">
+                * Projeção baseada em benchmarks do setor de construção civil/serviços premium 2024-2025. Ticket médio considerado: R$30.000-R$50.000. Margens: 25-30%. NÃO é garantia. Resultados variam conforme execução e contexto específico do negócio.
+            </p>
+        </div>
+        
+        <!-- EXPECTATIVA REALISTA -->
+        <div>
+            <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; text-align: center; color: #000000;">🎯 Expectativa Realista para Vidraçaria Amapá</h3>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem;">
+                Considerando que vocês já têm 7.000+ seguidores, 51 avaliações 4.5⭐, selo "Destaque de Ouro 2025" e atuam em Macapá/Santana - AP:
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                <!-- Fase 1 -->
+                <div style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #e91e63; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #e91e63;">Meses 1-2: Estruturação</h4>
+                    <p style="font-size: 0.95rem; line-height: 1.6;">
+                        Aumento de visibilidade local. 5-10 novos leads qualificados/mês. Custo de aquisição mais alto (fase de otimização). Profissionalização da presença digital (site, GMB, Instagram).
+                    </p>
+                </div>
+                
+                <!-- Fase 2 -->
+                <div style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #f39c12; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #f39c12;">Meses 3-6: Consolidação</h4>
+                    <p style="font-size: 0.95rem; line-height: 1.6;">
+                        15-25 leads qualificados/mês. Custo de aquisição estabilizado (R$100-150). Primeiros ROIs positivos mensuráveis. Posicionamento como referência local em vidraçaria/alumínio.
+                    </p>
+                </div>
+                
+                <!-- Fase 3 -->
+                <div style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #27ae60; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #27ae60;">Mês 6+: Crescimento</h4>
+                    <p style="font-size: 0.95rem; line-height: 1.6;">
+                        20-35 leads qualificados/mês. Autoridade local estabelecida. ROI consistente 4-7x (considerando margens). Redução da dependência de indicação. Previsibilidade de faturamento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. CTA FINAL -->
+    <section style="background: linear-gradient(135deg, #000000, #333333); padding: 4rem 4rem; text-align: center; color: white; position: relative; overflow: hidden; border-radius: 16px; margin: 0 4rem 4rem;">
+        <div style="position: relative; z-index: 2;">
+            <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Próximos Passos</h2>
+            <p style="font-size: 1.1rem; line-height: 1.6; max-width: 700px; margin: 0 auto 2rem; opacity: 0.95;">
+                Esta análise está pronta. As oportunidades estão mapeadas. A estratégia está desenhada. O mercado de 2026 exige controle de demanda, não espera por indicação.
+            </p>
+            <a href="https://wa.me/5516981005730?text=Fala%20William%20tudo%20joia%20?%20Via%20a%20sua%20an%C3%A1lise%20e%20gostaria%20de%20falar%20mais%20sobre%20o%20assunto." style="display: inline-block; background: #EFB828; color: #000000; padding: 1.2rem 3rem; border-radius: 50px; font-weight: 700; font-size: 1.1rem; text-decoration: none; box-shadow: 0 8px 25px rgba(239, 184, 40, 0.3); transition: all 0.3s ease; margin-bottom: 1.5rem;">
+                💬 Conversar sobre implementação
+            </a>
+            <p style="font-size: 0.9rem; margin-top: 1.5rem; opacity: 0.9;">
+                15-20 minutos para tirar dúvidas e entender se faz sentido para vocês. Sem compromisso. Sem contrato. Apenas uma conversa profissional.
+            </p>
+            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.7; font-style: italic;">
+                Esta análise foi desenvolvida com base em pesquisa de mercado, benchmark competitivo e melhores práticas de marketing digital B2B serviços premium. Resultados variam conforme execução e contexto específico de cada negócio.
+            </p>
+        </div>
+    </section>
+
+    <!-- 15. FOOTER -->
+    <footer style="background: #000000; color: #888; padding: 2rem 4rem; text-align: center; font-size: 0.9rem;">
+        <p style="margin-bottom: 0.5rem;">
+            © 2025 Proposta para <strong style="color: white;">Vidraçaria Amapá</strong> por 
+            <span style="color: #EFB828; font-weight: 700;">William F. Betioli</span> | Gestor de tráfego
+        </p>
+        <p>
+            <a href="https://instagram.com/bms_trafego" style="color: #EFB828; text-decoration: none; font-weight: 600;">Instagram: @bms_trafego</a>
+        </p>
+    </footer>
+
+    <!-- 16. BOTÃO VOLTAR AO TOPO -->
+    <button id="backToTop" style="position: fixed; bottom: 2rem; right: 2rem; background: linear-gradient(135deg, #000000, #333333); color: #EFB828; width: 50px; height: 50px; border-radius: 50%; border: 2px solid #EFB828; font-size: 1.5rem; cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.3s ease; z-index: 999; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+        ↑
+    </button>
+
+    <script>
+        // Botão voltar ao topo
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.style.opacity = '1';
+                backToTop.style.visibility = 'visible';
+            } else {
+                backToTop.style.opacity = '0';
+                backToTop.style.visibility = 'hidden';
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scroll para links âncora
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animações fade-in ao scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Aplicar animação às seções
+        document.querySelectorAll('section, .stat-card, .card, .phase-card, .roi-box').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
